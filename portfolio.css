@@ -688,6 +688,11 @@ svg circle.path{
   cursor: pointer;
 }
 
+.contact-form form .send:active{
+  background: rgb(207, 107, 207);
+  box-shadow: 0 0 20px rgb(218, 110, 218);
+}
+
 .contact_msg{
   margin-bottom: 5px;
   color: #d8dae7;
