@@ -122,6 +122,7 @@ body {
 }
 
 .container {
+  margin-bottom: 20px;
   max-width: 700px;
 }
 
@@ -864,4 +865,74 @@ svg circle.path{
   margin-left: 140px;
   animation: slideRight 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
+}
+
+
+@media screen and (min-width: 350px) {
+  .about .about-text{
+    margin-top: 35%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px){
+  .skill-main{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 630px) {
+  .home-img img{
+    width: 15vw;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+  .about .about-text{
+    margin-top: 20%;
+  }
+  .portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  
+  .home-content h3 {
+    font-size: 1.3rem;
+  }
+  .home-img img {
+    width: 70vw;
+  }
+  .portfolio-content {
+    grid-template-columns: 1fr;
+  }
+  .row {
+    flex: 1 1 100%;
+  }
+
+  .contact .contact-text{
+    display: block;
+    font-size: 2rem;
+  }
+  .contact .contact-text .contact-list{
+    font-size: 1rem;
+  }
+  .contact form label {
+    font-size: 1rem;
+  }
+  #contact-me input, textarea {
+    font-size: 1.2rem;
+  }
 }
