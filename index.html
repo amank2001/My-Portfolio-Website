@@ -56,7 +56,7 @@
       </div>
 
       <div class="home-img">
-        <img src="1700291086936.png" alt="aman pic">
+        <img src="1700291086936.png" alt="aman pic" />
       </div>
     </section>
 
@@ -73,16 +73,16 @@
           databases, version control, Git, GitHub, REST API's. I possess
           excellent problem solving skills and logical reasoning. I have earned
           certain certificates like META certification in BackEnd Development,
-          Data Analytics program from Godrej Infotech and currently I am doing
-          IBM Machine Learning certification. I have developed adequate amount
-          of projects as well using python, django, MySQL, API, HTML5, CSS,
-          JavaScript, Machine learning,etc which you can check out on my social
-          profiles i.e, LinkedIn and GitHub. I am a fast learner, a problem
-          solver, good team player and also possess leadership qualities. During
-          my academics I have taken part in extra curricular activities,i.e I
-          have been the Joint General Secretary for the entrepreneurship
-          development club (EDC). I have read the job description and I am
-          confident that my skills would make a great asset to the organisation.
+          Data Analytics program from Godrej Infotech and IBM Machine Learning
+          certification. I have developed adequate amount of projects as well
+          using python, django, MySQL, API, HTML5, CSS, JavaScript, Machine
+          learning,etc which you can check out on my social profiles i.e,
+          LinkedIn and GitHub. I am a fast learner, a problem solver, good team
+          player and also possess leadership qualities. During my academics I
+          have taken part in extra curricular activities,i.e I have been the
+          Joint General Secretary for the entrepreneurship development club
+          (EDC). I am ready to kickstart my career in the world of IT and
+          software development.
         </p>
       </div>
     </section>
@@ -128,7 +128,7 @@
 
     <section id="skills" class="skills">
       <div class="main-text">
-      <h2>My<span>Skills</span></h2>
+        <h2>My<span>Skills</span></h2>
       </div>
 
       <div class="skill-main">
@@ -190,8 +190,8 @@
           <div class="professional">
             <div class="box">
               <svg viewBox="0 0 100 100">
-              <circle class="bg" cx="50" cy="50" r="30"></circle>
-              <circle class="path path1" cx="50" cy="50" r="30"></circle>
+                <circle class="bg" cx="50" cy="50" r="30"></circle>
+                <circle class="path path1" cx="50" cy="50" r="30"></circle>
               </svg>
               <div class="text">
                 <big>80%</big>
@@ -203,7 +203,7 @@
               <svg viewBox="0 0 100 100">
                 <circle class="bg" cx="50" cy="50" r="30"></circle>
                 <circle class="path path2" cx="50" cy="50" r="30"></circle>
-                </svg>
+              </svg>
               <div class="text">
                 <big>85%</big>
                 <small>Analytical & logical Reasoning</small>
@@ -214,7 +214,7 @@
               <svg viewBox="0 0 100 100">
                 <circle class="bg" cx="50" cy="50" r="30"></circle>
                 <circle class="path path3" cx="50" cy="50" r="30"></circle>
-                </svg>
+              </svg>
               <div class="text">
                 <big>95%</big>
                 <small>Team Work & Communication</small>
@@ -225,7 +225,7 @@
               <svg viewBox="0 0 100 100">
                 <circle class="bg" cx="50" cy="50" r="30"></circle>
                 <circle class="path path4" cx="50" cy="50" r="30"></circle>
-                </svg>
+              </svg>
               <div class="text">
                 <big>90%</big>
                 <small>Hardworking & Quick Learner</small>
@@ -252,7 +252,9 @@
                   Developed a Personal Online Course Recommender using various
                   machine learning techniques and methods.
                 </p>
-                <a href="https://personal-recommender.streamlit.app" target="_blank"
+                <a
+                  href="https://personal-recommender.streamlit.app"
+                  target="_blank"
                   ><i class="bx bx-link-external" style="color: aqua"></i
                 ></a>
               </div>
@@ -332,9 +334,8 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- The javascript part -->
-    
+
     <script>
-      
       var typed = new Typed("#element", {
         strings: [
           "Full Stack Web Developer",
@@ -346,32 +347,42 @@
         typeSpeed: 110,
       });
 
-      const contactForm = document.getElementById('contact-me'),
-          contactMsg = document.getElementById('contact-msg')
+      const contactForm = document.getElementById("contact-me"),
+        contactMsg = document.getElementById("contact-msg");
 
-      const sendEmail = (e)=>{
-        e.preventDefault()
+      const sendEmail = (e) => {
+        e.preventDefault();
 
-        emailjs.sendForm('service_irpk769','template_wb8f9uj','#contact-me','O6YLIoGPcz9oO6xVw')
-        .then(()=>{
-          contactMsg.textContent = 'Message sent succesfully!'
+        emailjs
+          .sendForm(
+            "service_irpk769",
+            "template_wb8f9uj",
+            "#contact-me",
+            "O6YLIoGPcz9oO6xVw"
+          )
+          .then(
+            () => {
+              contactMsg.textContent = "Message sent succesfully!";
 
-          setTimeout(()=>{
-            contactMsg.textContent = ''
-          }, 5000)
+              setTimeout(() => {
+                contactMsg.textContent = "";
+              }, 5000);
 
-          contactForm.reset()
-        }, () =>{
-          contactMsg.textContent = 'Message not sent, sorry for the error :('
-        })
-      }
+              contactForm.reset();
+            },
+            () => {
+              contactMsg.textContent =
+                "Message not sent, sorry for the error :(";
+            }
+          );
+      };
 
-      contactForm.addEventListener('submit', sendEmail)
-
+      contactForm.addEventListener("submit", sendEmail);
     </script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </body>
 </html>

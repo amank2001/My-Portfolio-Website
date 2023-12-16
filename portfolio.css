@@ -289,6 +289,7 @@ svg circle.bg{
 svg circle.path{
   stroke-width: 5;
   stroke:#0ef;
+  filter: drop-shadow(0 0 3px rgb(88 196 243));
   fill: transparent;
   stroke-dashoffset: 300px;
   stroke-dasharray: 300px;
@@ -337,7 +338,6 @@ svg circle.path{
   }
   100%{
     background: #0ef;
-    box-shadow: 0 0 10px rgb(88 196 243);
   }
 }
 
@@ -935,4 +935,19 @@ svg circle.path{
   #contact-me input, textarea {
     font-size: 1.2rem;
   }
+}
+
+@media screen and (max-width: 400px){
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 450px;
+  }
+  .navbar{
+    display: inline-flex;
+  }
+  .about-text{
+    margin-top: 800px;
+  }
+  
 }
