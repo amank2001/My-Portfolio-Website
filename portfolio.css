@@ -18,7 +18,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 5%;
+  padding: 5px 5%;
   background: #051129;
   display: flex;
   justify-content: space-between;
@@ -247,7 +247,7 @@ body {
 } 
 
 .skill-bar .bar .js{
-  width: 70%;
+  width: 90%;
   animation: js 3s;
 }
 .skill-bar .bar .python{
@@ -262,6 +262,10 @@ body {
   width: 85%;
   animation: mysql 6s;
 }
+.skill-bar .bar .ml{
+  width: 55%;
+  animation: ml 6s;
+}
 
 svg{
   width: 300px;
@@ -271,7 +275,7 @@ svg{
 
 
 svg circle.bg{
-  stroke-width: 5px;
+  stroke-width: 4px;
   stroke:#051129;
   fill: transparent;
   stroke-dasharray: 300px;
@@ -287,7 +291,7 @@ svg circle.bg{
 }
 
 svg circle.path{
-  stroke-width: 5;
+  stroke-width: 4;
   stroke:#0ef;
   filter: drop-shadow(0 0 3px rgb(88 196 243));
   fill: transparent;
@@ -365,7 +369,7 @@ svg circle.path{
     width: 0%;
   }
   100%{
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -393,6 +397,15 @@ svg circle.path{
   }
   100%{
     width: 85%;
+  }
+}
+
+@keyframes ml{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 55%;
   }
 }
 
@@ -689,9 +702,10 @@ svg circle.path{
   cursor: pointer;
 }
 
-.contact-form form .send:active{
-  background: rgb(207, 107, 207);
-  box-shadow: 0 0 20px rgb(218, 110, 218);
+.contact-form form .send:focus{
+  background: transparent;
+  color: rgb(126, 22, 210);
+  border: 2px solid rgb(126, 22, 210);
 }
 
 .contact_msg{
