@@ -202,6 +202,7 @@ body {
 
 .skill-bar{
   margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 2.3rem;
 }
 
@@ -740,6 +741,7 @@ svg circle.path{
     border-radius: 0.5rem;
 }
 
+
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -881,87 +883,110 @@ svg circle.path{
   animation-delay: calc(0.2s * var(--i));
 }
 
-
-@media screen and (min-width: 350px) {
-  .about .about-text{
-    margin-top: 35%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .home {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .portfolio-content {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 550px){
-  .skill-main{
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media screen and (max-width: 630px) {
-  .home-img img{
-    width: 15vw;
-  }
-  
-}
-
-@media screen and (max-width: 767px) {
-  .home {
+@media screen and (max-width:450px) {
+  #home {
+    display: grid;
     grid-template-columns: 1fr;
   }
-  .about .about-text{
-    margin-top: 20%;
-  }
-  .portfolio-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media screen and (max-width: 760px) {
-  
-  .home-content h3 {
-    font-size: 1.3rem;
+  .container{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 90px;
   }
-  .home-img img {
+
+  .home-img img{
+    margin-left: 90px;
     width: 70vw;
   }
-  .portfolio-content {
-    grid-template-columns: 1fr;
-  }
-  .row {
-    flex: 1 1 100%;
+
+  .about{
+    display: grid;
+    max-width: 100%;
+    margin: 800px 0px;
+    margin-left: 120px;
+    margin-bottom: 20%;
+    justify-content:center;
+    align-items: center;
+    gap: 1.5rem;
   }
 
-  .contact .contact-text{
+  .about-text p{
     display: block;
-    font-size: 2rem;
   }
-  .contact .contact-text .contact-list{
-    font-size: 1rem;
+
+  .container4 {
+    max-width: 100%;
+    margin-top: 5%;
   }
-  .contact form label {
-    font-size: 1rem;
+
+  .education{
+    padding-left: 100px;
   }
-  #contact-me input, textarea {
-    font-size: 1.2rem;
+
+  .score{
+    margin-left: 0%;
+    display: block;
+    text-align: center;
   }
+
+  .time{
+    display: block;
+    text-align: center;
+  }
+
+  .institute{
+    display: block;
+    text-align: center;
+  }
+
+  .skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 30px;
+    column-gap: 50px;
+  }
+
+  .skills .main-text {
+    padding-left: 150px;
+  }
+
+.contact{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 3rem;
 }
 
-@media screen and (max-width: 400px){
-  .container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-top: 450px;
-  }
-  .navbar{
-    display: inline-flex;
-  }
-  .about-text{
-    margin-top: 800px;
-  }
-  
+#project{
+  margin: 20% 20%;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(360px, 450px));
+  align-items: center;
+}
+
+.last-text{
+  width: 600px;
+}
+
+.main-text h3 {
+  width: 300px;
+}
+
+.contact-text h4 {
+  text-align: center;
+}
+
+.contact-list {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.contact-form{
+  margin-left: 10%;
+}
 }
