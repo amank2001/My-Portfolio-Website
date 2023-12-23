@@ -465,6 +465,7 @@ svg circle.path {
 }
 
 .home-img img {
+  filter: drop-shadow(0 0 60px rgb(88 196 243));
   max-width: 400px;
   margin-right: -60px;
   opacity: 0;
@@ -897,8 +898,10 @@ form textarea {
   }
 
   .home-img img {
-    margin-left: 85px;
-    width: 70vw;
+    filter: drop-shadow(0 0 40px rgb(88 196 243));
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 85vw;
   }
 
   .about {
