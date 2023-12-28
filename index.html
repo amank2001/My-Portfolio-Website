@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aman Khan Portfolio</title>
-<link
+    
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="portfolio.css" />
   </head>
 
@@ -15,13 +17,16 @@
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
 
-      <nav class="navbar">
-        <a href="#home" style="--i: 1">Home</a>
-        <a href="#about" style="--i: 2">About</a>
-        <a href="#education" style="--i: 3">Education</a>
-        <a href="#skills" style="--i: 4">Skills</a>
-        <a href="#project" style="--i: 5">Projects</a>
-        <a href="#contact" style="--i: 6">Contact</a>
+      <nav class="navbar" id="myNavbar">
+        <a href="#home" style="--i: 1" onclick="myFunction()">Home</a>
+        <a href="#about" style="--i: 2" onclick="myFunction()">About</a>
+        <a href="#education" style="--i: 3" onclick="myFunction()">Education</a>
+        <a href="#skills" style="--i: 4" onclick="myFunction()">Skills</a>
+        <a href="#project" style="--i: 5" onclick="myFunction()">Projects</a>
+        <a href="#contact" style="--i: 6" onclick="myFunction()">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
 
@@ -329,11 +334,11 @@
       <p>Developed with ❤ by Aman Khan © 2023</p>
     </div>
     <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+    
     <!-- The javascript part -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script>
       var typed = new Typed("#element", {
@@ -384,5 +389,17 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+
   </body>
 </html>

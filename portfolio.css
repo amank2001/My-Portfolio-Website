@@ -9,7 +9,7 @@
 }
 
 body {
-  background: rgb(6 5 16);
+  background: rgb(0, 0, 0);
   color: #d8dae7;
 }
 
@@ -18,8 +18,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 5px 5%;
-  background: #051129;
+  padding: 10px 5%;
+  background: #001F3F;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +27,7 @@ body {
 }
 
 .logo {
+  filter: drop-shadow(0 0 10px #FFD700);
   position: relative;
   font-size: 25px;
   color: #fff;
@@ -52,8 +53,12 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-  color: rgb(88 196 243);
+  color: #FFD700;
   text-decoration: underline;
+}
+
+.navbar .icon {
+  display: none;
 }
 
 .home {
@@ -105,11 +110,11 @@ body {
 }
 
 .container h3 span {
-  color: rgb(88 196 243);
+  color: #FFD700;
 }
 
 #element {
-  color: rgb(88 196 243);
+  color: #FFD700;
 }
 
 .container h1 {
@@ -138,7 +143,7 @@ body {
 }
 
 .container4 h2 span {
-  color: #0ef;
+  color: #FFD700;
 }
 
 .about {
@@ -160,7 +165,7 @@ body {
 }
 
 .about-text h2 span {
-  color: #0ef;
+  color: #FFD700;
 }
 
 .about-text h4 {
@@ -189,7 +194,7 @@ body {
 }
 
 .main-text h2 span {
-  color: #0ef;
+  color: #FFD700;
 }
 
 .skill-main {
@@ -213,7 +218,7 @@ body {
 }
 
 .skill-main h3 span {
-  color: #0ef;
+  color: #FFD700;
 }
 
 .skill-left .skill-bar .info {
@@ -237,9 +242,9 @@ body {
   height: 100%;
   position: absolute;
   left: 0;
-  background: #0ef;
+  background: #FFD700;
   border-radius: 25px;
-  box-shadow: 0 0 10px rgb(88 196 243);
+  box-shadow: 0 0 11px #ffd900;
 }
 
 .skill-bar .bar .html {
@@ -276,7 +281,7 @@ svg {
 
 svg circle.bg {
   stroke-width: 4px;
-  stroke: #051129;
+  stroke: #12114d;
   fill: transparent;
   stroke-dasharray: 300px;
   stroke-dashoffset: 300px;
@@ -292,8 +297,8 @@ svg circle.bg {
 
 svg circle.path {
   stroke-width: 4;
-  stroke: #0ef;
-  filter: drop-shadow(0 0 3px rgb(88 196 243));
+  stroke: #FFD700;
+  filter: drop-shadow(0 0 3px #ffd900);
   fill: transparent;
   stroke-dashoffset: 300px;
   stroke-dasharray: 300px;
@@ -336,11 +341,11 @@ svg circle.path {
 
 @keyframes glow {
   0% {
-    background: #051129;
+    background: #12114d;
     box-shadow: none;
   }
   100% {
-    background: #0ef;
+    background: #FFD700;
   }
 }
 
@@ -446,10 +451,10 @@ svg circle.path {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid rgb(88 196 243);
+  border: 2px solid #FFD700;
   border-radius: 50%;
   font-size: 20px;
-  color: rgb(88 196 243);
+  color: #FFD700;
   text-decoration: none;
   margin: 30px 15px 30px 0;
   transition: 0.5s ease;
@@ -459,9 +464,9 @@ svg circle.path {
 }
 
 .social-media a:hover {
-  background: rgb(88 196 243);
+  background: #FFD700;
   color: #1f242d;
-  box-shadow: 0 0 20px rgb(88 196 243);
+  box-shadow: 0 0 20px #FFD900;
 }
 
 .home-img img {
@@ -478,8 +483,8 @@ svg circle.path {
   display: inline-block;
   padding: 12px 12px;
   background: transparent;
-  color: rgb(88 196 243);
-  border: 2px solid rgb(88 196 243);
+  color: #FFD700;
+  border: 2px solid #FFD700;
   border-radius: 40px;
   text-decoration: none;
   font-size: 16px;
@@ -492,9 +497,9 @@ svg circle.path {
 }
 
 .btn:hover {
-  background: rgb(88 196 243);
+  background: #FFD700;
   color: #1f242d;
-  box-shadow: 0 0 10px rgb(88 196 243);
+  box-shadow: 0 0 10px #FFD900;
 }
 
 #project {
@@ -513,7 +518,7 @@ svg circle.path {
 }
 
 .main-text h2 span {
-  color: #0ef;
+  color:#FFD700;
 }
 
 .main-text h3 {
@@ -547,7 +552,7 @@ svg circle.path {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(transparent, #0ef);
+  background: linear-gradient(transparent, #FFD900);
   position: absolute;
   border-radius: 8px;
   left: 0;
@@ -614,7 +619,7 @@ svg circle.path {
 }
 
 .contact-text h2 span {
-  color: #0ef;
+  color: #FFD700;
 }
 
 .contact-text h4 {
@@ -650,7 +655,7 @@ svg circle.path {
 
 .contact-list li a:hover {
   transform: scale(1.01) translate(-5px);
-  color: #0ef;
+  color: #FFD700;
 }
 
 .contact-form form {
@@ -680,8 +685,8 @@ form textarea {
   display: inline-block;
   padding: 12px 12px;
   background: transparent;
-  color: rgb(88 196 243);
-  border: 2px solid rgb(88 196 243);
+  color: #FFD700;
+  border: 2px solid #FFD700;
   border-radius: 40px;
   text-decoration: none;
   font-size: 16px;
@@ -694,9 +699,9 @@ form textarea {
 }
 
 .contact-form form .send:hover {
-  background: rgb(88 196 243);
+  background: #FFD700;
   color: #1f242d;
-  box-shadow: 0 0 10px rgb(88 196 243);
+  box-shadow: 0 0 20px #FFD900;
   cursor: pointer;
 }
 
@@ -719,9 +724,10 @@ form textarea {
   width: 100%;
   text-align: center;
   padding: 15px 0;
-  background: #12114d;
+  background: #001F3F;
   font-weight: 500;
   margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .top {
@@ -732,7 +738,8 @@ form textarea {
 
 .top i {
   color: black;
-  background-color: #0ef;
+  background-color: #FFD700;
+  box-shadow: 0 0 10px #FFD900;
   font-size: 20px;
   padding: 10px;
   border-radius: 0.5rem;
@@ -817,6 +824,8 @@ form textarea {
 }
 
 .score {
+  padding: 5px;
+  box-shadow: 0 0 30px #FFD900;
   font-size: 18px;
   opacity: 0;
   animation: slideRight 1s ease forwards;
@@ -832,7 +841,7 @@ form textarea {
 
 .course {
   font-size: 25px;
-  color: rgb(88 196 243);
+  color: #FFD700;
   margin-left: 10px;
   opacity: 0;
   animation: slideRight 1s ease forwards;
@@ -844,7 +853,7 @@ form textarea {
 }
 
 #jhc {
-  color: rgb(88 196 243);
+  color: #FFD700;
   font-weight: 600;
   margin-left: 240px;
   animation: slideRight 1s ease forwards;
@@ -852,7 +861,7 @@ form textarea {
 }
 
 #thomas {
-  color: rgb(88 196 243);
+  color: #FFD700;
   font-weight: 600;
   margin-left: 120px;
   animation: slideRight 1s ease forwards;
@@ -860,7 +869,7 @@ form textarea {
 }
 
 #sxhs {
-  color: rgb(88 196 243);
+  color: #FFD700;
   font-weight: 600;
   margin-left: 140px;
   animation: slideRight 1s ease forwards;
@@ -870,6 +879,28 @@ form textarea {
 @media screen and (max-width: 450px) {
   * {
     width: fit-content;
+  }
+
+  .header {
+    padding: 10px 5%;
+  }
+
+  .navbar a {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: inline;
+    text-align: left;
   }
 
   #home {
@@ -943,6 +974,8 @@ form textarea {
   }
 
   .score {
+    padding: 5px;
+    box-shadow: 0 0 30px #FFD900;
     margin-left: 0%;
     display: block;
     text-align: center;
