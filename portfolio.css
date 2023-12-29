@@ -171,7 +171,7 @@ body {
 .about-text h4 {
   font-size: 30px;
   font-weight: 600;
-  color: #fff;
+  color: #FFD700;
   line-height: 1.7;
   margin: 15px 0 30px;
 }
@@ -222,6 +222,8 @@ body {
 }
 
 .skill-left .skill-bar .info {
+  color: #fff;
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -917,12 +919,21 @@ form textarea {
 
   .btn {
     margin-right: 8%;
+    background: #FFD700;
+    color: #1f242d;
+    box-shadow: 0 0 30px #FFD900;
   }
 
   .social-media {
     margin-left: 35%;
   }
 
+  .social-media a {
+    background: #FFD700;
+    color: #1f242d;
+    box-shadow: 0 0 20px #FFD900;
+  }
+  
   .container {
     text-align: center;
     margin-top: 10%;
@@ -931,7 +942,7 @@ form textarea {
   .home-img img {
     filter: drop-shadow(0 0 40px rgb(88 196 243));
     margin-top: 30px;
-    margin-left: 60px;
+    margin-left: 65px;
     width: 85vw;
   }
 
@@ -1069,5 +1080,16 @@ form textarea {
 
   .contact-form {
     margin-left: 3%;
+  }
+
+  .contact-form form .send {
+    background: #FFD700;
+    color: #1f242d;
+    box-shadow: 0 0 20px #FFD900;
+  }
+  .contact-form form .send:focus-visible {
+    background: transparent;
+    color: #FFD700;
+    border: 2px solid #FFD700;
   }
 }
