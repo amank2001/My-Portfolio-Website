@@ -604,6 +604,36 @@ svg circle.path {
   height: 100%;
 }
 
+.extra {
+  display: none;
+}
+
+#show-more-btn {
+  display: inline-block;
+  padding: 7px 7px;
+  margin-left: 45%;
+  margin-top: 1%;
+  background: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.5s ease;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+#show-more-btn:hover {
+  background: #FFD700;
+  color: #1f242d;
+  box-shadow: 0 0 10px #FFD900;
+  cursor: pointer;
+}
+
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1051,12 +1081,21 @@ form textarea {
 
   #project {
     margin: 20% 20%;
+    margin-bottom: 80%;
   }
 
   .portfolio-content {
     display: grid;
     grid-template-columns: repeat(1, minmax(360px, 450px));
     align-items: center;
+  }
+
+  #show-more-btn{
+    margin-left: 35%;
+    margin-top: 3%;
+    background: #FFD700;
+    color: #1f242d;
+    box-shadow: 0 0 10px #FFD900;
   }
 
   .last-text {
