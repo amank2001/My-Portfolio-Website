@@ -398,7 +398,7 @@
     </section>
 
     <div class="last-text">
-      <p>Developed with ❤ by Aman Khan © 2023</p>
+      <p>Developed with ❤ by Aman Khan © 2024</p>
     </div>
     <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
@@ -472,14 +472,17 @@
       var isMoreVisible = false;
       var projectsContainer = document.getElementById("project");
       var showMoreBtn = document.getElementById("show-more-btn");
-
+      
       function toggleProjectsVisibility() {
         var extraProjects = document.querySelectorAll(".extra");
-
+        
         extraProjects.forEach(function (projects) {
           projects.style.display = isMoreVisible ? "none" : "block";
         });
 
+        showMoreBtn.scrollIntoView({top: project.offsetTop, behavior:'smooth', block:'start'});
+        showMoreBtn.scrollIntoView({down: project.offsetTop, behavior:'smooth', block:"end"})
+        
         showMoreBtn.textContent = isMoreVisible ? "Show More" : "Show Less";
 
         project.style.maxHeight = isMoreVisible ? "800px" : "none";
